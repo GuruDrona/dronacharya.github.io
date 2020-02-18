@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="CSS/icomoon.css">
 	<link rel="stylesheet" href="CSS/bootstrap.css">
 	<link rel="stylesheet" href="CSS/style.css">
+<script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+</script>
 </head>
 <body>
 	<div id="particles-js">
@@ -25,14 +35,23 @@
                                 <li><a href="https://forum.xda-developers.com/member.php?u=9480926" target="_blank">XDA</a></li>
 			</ul>
 		</div>
-        <div class="nav">
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        <div class="menu">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Download</a>
-        </div>
+<div id="content">
+
+    <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+
+    <div id="menu" class="nav">
+      <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Download</a>
+    </div>
                <footer id="footer">
 			&copy; Made With ❤️ by Shivam
 		</footer>

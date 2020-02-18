@@ -64,6 +64,15 @@ figure {
   display: block;
 }
 
+.btn_one {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    border: 1px #fbbc05 solid;
+    padding: 1em 3em;
+    border-radius: 100px;   
+}
+
 /* Icons */
 .social {
   padding: 0;

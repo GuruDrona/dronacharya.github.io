@@ -136,29 +136,30 @@ figure {
   text-align: center;
 }
 
-.nav div {
-    height: 4px;
-    background-color: white;
-    margin: 5px 0;
-    border-radius: 25px;
-    transition: 0.3s;
+.container{
+position: absolute;
 }
-.nav {
-    width: 30px;
-    display: block;
-    margin: 1em 0 0 1em;
-    
+li{
+display: inline-block;
 }
-.one {
-    width: 30px;
-}
-.two {
-    width: 20px;
-}
-.three {
-    width: 25px;
+li a{
+display: inline-block;
+text-decoration: none;
+font-weight: lighter;
+font-size: 20px;
+padding: 0 20px;
 }
 
-.nav:hover div {
-    width: 30px;
+.cool-link::after{
+content:"";
+display: block:
+height: 2px;
+Width: 0;
+background: #fff;
+transition: widht .3sec;
+}
+
+.cool-link:hover::after{
+width: 100%;
+transition: width .3sec;
 }

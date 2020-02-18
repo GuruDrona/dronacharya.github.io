@@ -136,30 +136,59 @@ figure {
   text-align: center;
 }
 
-.container{
-position: absolute;
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
 }
-li{
-display: inline-block;
+.menu {
+    margin: 0 30px 0 0;
 }
-li a{
-display: inline-block;
-text-decoration: none;
-font-weight: lighter;
-font-size: 20px;
-padding: 0 20px;
-}
-
-.cool-link::after{
-content:"";
-display: block:
-height: 2px;
-Width: 0;
-background: #fff;
-transition: widht .3sec;
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
 }
 
-.cool-link:hover::after{
-width: 100%;
-transition: width .3sec;
+span {
+    color: #54D17A;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
 }
